@@ -1,10 +1,12 @@
 [build.environment]
   NODE_VERSION = "24"
 
+
 [functions]
   directory = "netlify/functions/"
   node_bundler = "nft"
-  included_files = ["node_modules/@waline/vercel/src/**", "node_modules/@waline/vercel/view/**"]
+  included_files = ["node_modules/@waline/vercel/src/**", "node_modules/@waline/vercel/view/**", "node_modules/@mathjax/**"]
+
 
 [[redirects]]
   from = "/*"
